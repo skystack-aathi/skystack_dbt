@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: landing
+    database: skystack_dbt_project
+    schema: skystack_dbt_landing
+    tables:
+      - name: orders
+      - name: products
+      - name: reviews
+      - name: users
+
