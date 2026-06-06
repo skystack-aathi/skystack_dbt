@@ -1,3 +1,9 @@
+{{
+    config(
+        tags= "contains_aii"
+    )
+}}
+
 select 
 *
 from 
