@@ -36,4 +36,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  +materialized: table
+    skystack_dbt_project:
+      +materialized: table
+      gold:
+        +materialized: view
