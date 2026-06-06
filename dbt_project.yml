@@ -46,3 +46,9 @@ models:
       gold:
         +materialized: view
         # +schema: gold
+
+seeds: 
+   skystack_dbt_project:
+     products_categories:
+       +schema: bronze
+       
