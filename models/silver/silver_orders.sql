@@ -4,7 +4,7 @@ select
     product_id,
     quantity,
     unit_price,
-    (quantity * unit_price) as order_amount,
+    {{multiply_columns_and_round('quantity','unit_price',2) }} as order_amount,
     date(date_format(created_at,"yyyy-MM-dd")) as order_date
 from
 {{ ref("bronze_orders") }}
